@@ -2,7 +2,7 @@
 
 namespace Day1
 {
-    public class Program
+    public class FuelCalculator
     {
         static void Main(string[] args)
         {
@@ -17,6 +17,11 @@ namespace Day1
             Console.Read();
         }
 
+        /// <summary>
+        /// Recursively calculates the fuel required for a payload.
+        /// </summary>
+        /// <param name="payloadMass">The payload mass in "units"</param>
+        /// <returns>The fuel required for the payload mass.</returns>
         public static int ComputeFuel(int payloadMass)
         {
             Console.WriteLine($"Computing mass of: {payloadMass}");
