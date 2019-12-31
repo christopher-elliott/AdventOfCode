@@ -8,8 +8,9 @@ namespace Day2
         {
             string input = System.IO.File.ReadAllText("input.txt");
             Console.WriteLine($"Processing input: {input}");
-            string[] stringarr = input.Split(","); 
-            int[] arr = Array.ConvertAll(stringarr, int.Parse);
+            
+            string[] string_arr = input.Split(","); 
+            int[] arr = Array.ConvertAll(string_arr, int.Parse);
 
             int mem0;
           
